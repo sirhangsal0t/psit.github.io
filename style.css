@@ -1,0 +1,45 @@
+/****
+Fonts
+****/
+
+@font-face {
+    font-family: "Barlow";
+    src: url("Fonts/Barlow/barlow-v12-latin-regular.woff2") format("woff2"),
+        url("Fonts/Barlow/barlow-v12-latin-regular.woff") format("woff");
+
+}
+
+:root {
+    --clr-text: #fff;
+    --clr-primary: #25274d;
+    --clr-accent-1: #239cca;
+    --clr-accent-2: #29648a;
+
+    --ff-title: "Barlow", sans-serif;
+    --ff-serif: "Crimson Text", serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Barlow", serif;
+    color: var(--clr-text);
+    font-size: 1.125rem;
+}
+
+/* Typography */
+
+h2,h3 {
+    font-family: var(--ff-title);
+    line-height: 0.8;
+    font-size: 60px;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
